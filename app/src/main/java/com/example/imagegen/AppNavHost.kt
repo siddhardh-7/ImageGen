@@ -4,9 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.imagegen.screens.DetailScreen
-import com.example.imagegen.screens.HistoryScreen
-import com.example.imagegen.screens.MainScreen
+import com.example.imagegen.screens.detail.DetailScreen
+import com.example.imagegen.screens.history.HistoryScreen
+import com.example.imagegen.screens.main.MainScreen
 
 @Composable
 fun AppNavHost() {
@@ -26,16 +26,20 @@ fun AppNavHost() {
         composable(
             route = Screen.Detail.route,
         ) {
-            DetailScreen {
-                navController.popBackStack()
-            }
+            DetailScreen (
+                onBackPress = {
+                    navController.popBackStack()
+                }
+            )
         }
         composable(
             route = Screen.History.route
         ) {
-            HistoryScreen {
-                navController.popBackStack()
-            }
+            HistoryScreen (
+                onBackPress = {
+                    navController.popBackStack()
+                }
+            )
         }
     }
 }
