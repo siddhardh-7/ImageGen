@@ -18,6 +18,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -40,6 +41,7 @@ import coil3.compose.SubcomposeAsyncImage
 import coil3.request.ImageRequest
 import coil3.request.crossfade
 import com.example.imagegen.R
+import com.example.imagegen.ui.theme.blue
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -112,6 +114,9 @@ fun DetailScreen(
         }
         Button(
             modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors().copy(
+                containerColor = blue
+            ),
             onClick = {
                 detailViewModel.generateImage()
             }

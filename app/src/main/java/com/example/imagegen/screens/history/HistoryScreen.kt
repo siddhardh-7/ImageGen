@@ -14,6 +14,7 @@ import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -32,6 +33,7 @@ import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import coil3.request.crossfade
 import com.example.imagegen.R
+import com.example.imagegen.ui.theme.blue
 
 @Composable
 fun HistoryScreen(
@@ -92,6 +94,9 @@ fun HistoryScreen(
         }
         Button(
             modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors().copy(
+                containerColor = blue
+            ),
             onClick = {
                 viewmodel.clearList()
             }
