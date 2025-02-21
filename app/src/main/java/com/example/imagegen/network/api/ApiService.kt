@@ -1,4 +1,4 @@
-package com.example.imagegen.network
+package com.example.imagegen.network.api
 
 import com.example.imagegen.network.models.GenerateDogData
 import retrofit2.http.GET

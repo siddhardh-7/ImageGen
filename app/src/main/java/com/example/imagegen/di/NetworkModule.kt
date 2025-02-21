@@ -1,5 +1,6 @@
-package com.example.imagegen.network
+package com.example.imagegen.di
 
+import com.example.imagegen.network.api.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

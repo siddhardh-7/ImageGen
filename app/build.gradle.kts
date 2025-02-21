@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 
     id("kotlin-kapt")
+    id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
 }
 
@@ -68,6 +69,12 @@ dependencies {
     implementation(libs.coil.network.okhttp)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    annotationProcessor(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+//    implementation(libs.kotlinx.coroutines.android)
 }
 
 kapt {
