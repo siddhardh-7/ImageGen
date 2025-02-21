@@ -84,9 +84,10 @@ If necessary, here are the tools required for setting up the development environ
 
 
 ## App Screenshots
+
 - Home Screen\
-  <img src="https://github.com/user-attachments/assets/a9610525-4372-4202-8710-a87e1884df3d" width="320">
+  <img src="https://github.com/user-attachments/assets/356245ed-a514-4008-b6ee-661fbcda5a2a" width="320">
 - Generate Screen\
-  <img src="https://github.com/user-attachments/assets/19a1bc2e-a0e2-4e52-982a-f2b7fddba9e7" width="320">
+  <img src="https://github.com/user-attachments/assets/41cd5368-1604-4117-94a2-a3aac375fb92" width="320">
 - History Screen\
-  <img src="https://github.com/user-attachments/assets/66cbbbd5-e2f4-4c88-9db7-3dcd9ff2e03e" width="320">
+  <img src="https://github.com/user-attachments/assets/8ca8ea43-5de2-46bb-99ed-317fa7ccb6ec" width="320">
