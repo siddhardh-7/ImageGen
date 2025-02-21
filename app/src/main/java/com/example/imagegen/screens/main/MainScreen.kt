@@ -1,5 +1,6 @@
 package com.example.imagegen.screens.main
 
+import android.graphics.Color
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -16,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.imagegen.ui.theme.blue
+import com.example.imagegen.ui.theme.white
 
 @Composable
 fun MainScreen(
@@ -44,7 +46,8 @@ fun MainScreen(
         Button(
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors().copy(
-                containerColor = blue
+                containerColor = blue,
+                contentColor = white
             ),
             onClick = {
                 toDetailsScreen()
@@ -55,7 +58,8 @@ fun MainScreen(
         Button(
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors().copy(
-                containerColor = blue
+                containerColor = blue,
+                contentColor = white
             ),
             onClick = {
                 toHistoryScreen()

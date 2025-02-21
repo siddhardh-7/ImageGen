@@ -42,6 +42,7 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import com.example.imagegen.R
 import com.example.imagegen.ui.theme.blue
+import com.example.imagegen.ui.theme.white
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -115,7 +116,8 @@ fun DetailScreen(
         Button(
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors().copy(
-                containerColor = blue
+                containerColor = blue,
+                contentColor = white
             ),
             onClick = {
                 detailViewModel.generateImage()
