@@ -27,7 +27,7 @@ fun MainScreen(
     ) {
         Spacer(modifier = Modifier.weight(1f))
         Text(
-            "Welcome to ImageGen",
+            "Welcome to Pub Pixels",
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center

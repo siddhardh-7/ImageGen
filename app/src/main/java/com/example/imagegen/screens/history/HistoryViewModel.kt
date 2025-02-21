@@ -2,7 +2,6 @@ package com.example.imagegen.screens.history
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.imagegen.network.api.ApiService
 import com.example.imagegen.network.local.CacheRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
