@@ -10,10 +10,6 @@ class CacheRepository @Inject constructor(private val cacheDao: CacheDao) {
         cacheDao.addToCache(cacheEntity)
     }
 
-    suspend fun getCache(imageUrl: String): String? {
-        return cacheDao.getFromCache(imageUrl)?.imageUrl
-    }
-
     suspend fun getCacheList() : List<String> {
         return cacheDao.getItems().map { it.imageUrl }
     }

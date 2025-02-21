@@ -15,12 +15,6 @@ interface CacheDao {
     @Query("SELECT * FROM cache_table")
     suspend fun getItems() : List<CacheEntity>
 
-    @Query("SELECT * FROM cache_table WHERE imageUrl = :imageUrl")
-    suspend fun getItem(imageUrl: String): CacheEntity?
-
-    @Query("UPDATE cache_table SET lastAccessed = :timestamp WHERE imageUrl = :imageUrl")
-    suspend fun updateAccessTime(imageUrl: String, timestamp: Long)
-
     @Query("DELETE FROM cache_table WHERE imageUrl = (SELECT imageUrl FROM cache_table ORDER BY lastAccessed ASC LIMIT 1)")
     suspend fun removeLeastRecentlyUsed()
 
@@ -37,14 +31,5 @@ interface CacheDao {
             removeLeastRecentlyUsed()
         }
         insertOrUpdate(cacheEntity)
-    }
-
-    @Transaction
-    suspend fun getFromCache(imageUrl: String): CacheEntity? {
-        val item = getItem(imageUrl)
-        item?.let {
-            updateAccessTime(imageUrl, System.currentTimeMillis())
-        }
-        return item
     }
 }
