@@ -82,6 +82,8 @@ If necessary, here are the tools required for setting up the development environ
 - **Install Android Studio**: Follow the [official instructions](https://developer.android.com/studio).
 - **Install Java (OpenJDK 11)**: You can install OpenJDK 11 using package managers like Homebrew (macOS) or Chocolatey (Windows), or manually from [AdoptOpenJDK](https://adoptopenjdk.net/).
 
+## APK file
+- https://drive.google.com/drive/folders/1_BplhULH9RwaAXqmj3eRN_2WJAubcgqr
 
 ## App Screenshots
 
